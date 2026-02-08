@@ -57,11 +57,11 @@ hr{
 }
 
 /* ======================================
-   TEXT UTILITY CLASSES
+   TEXT UTILITIES (FIXED microRNA ISSUE)
    ====================================== */
 .kicker{
   color:var(--muted);
-  text-transform:uppercase;
+  /* text-transform:uppercase;  <-- REMOVED to prevent MICRO becoming MICRO */
   letter-spacing:.04em;
   font-size:.82rem;
 }
@@ -75,7 +75,7 @@ hr{
   border-radius:8px;
 }
 
-/* BADGES */
+/* BADGE */
 .badge{
   display:inline-block;
   background:#fee2f2;
@@ -126,11 +126,10 @@ nav{
 }
 
 .brand img{
-  height:64px;   /* MORE PROMINENT LOGO */
+  height:64px;   /* BIGGER, MORE PROMINENT LOGO */
   width:auto;
 }
 
-/* Navigation links */
 nav a{
   font-weight:600;
   padding:6px 10px;
@@ -252,3 +251,4 @@ blockquote{
   margin:8px 0;
   color:#374151;
 }
+

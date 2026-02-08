@@ -76,7 +76,7 @@ hr{
 .kicker{
   color:var(--muted);
   letter-spacing:.03em;
-  font-size:.85rem;
+  font-size:.85rem; /* no uppercase to preserve microRNA casing */
 }
 
 .small{
@@ -171,6 +171,11 @@ nav{
   border-radius:12px;
   display:block;
   object-fit:cover;
+}
+
+/* Optional tighter variant for hero sections */
+.hero-tight{
+  padding:48px 0;
 }
 
 /* ======================================
@@ -295,6 +300,88 @@ footer a{
   font-size:.85rem;
   color:#cbd5e1;
 }
+
+/* ======================================
+   ANIMATIONS & INTERACTIONS
+   ====================================== */
+
+/* Smooth scroll to anchors */
+html{
+  scroll-behavior:smooth;
+}
+
+/* Fade-in for major blocks */
+section, .card, .card-mini, .stats-card, .hero img{
+  animation:fadeIn 0.8s ease-out both;
+}
+
+@keyframes fadeIn{
+  0%{opacity:0; transform:translateY(12px);}
+  100%{opacity:1; transform:translateY(0);}
+}
+
+/* Stagger grid children slightly */
+.grid > *:nth-child(1){ animation-delay:.05s; }
+.grid > *:nth-child(2){ animation-delay:.15s; }
+.grid > *:nth-child(3){ animation-delay:.25s; }
+.grid > *:nth-child(4){ animation-delay:.35s; }
+
+/* Card elevation on hover (subtle, clinical) */
+.card, .card-mini{
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.card:hover, .card-mini:hover{
+  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+  transform:translateY(-3px);
+}
+
+/* Stats card underline indicator on hover */
+.stats-card{
+  position:relative;
+  overflow:hidden;
+}
+.stats-card::after{
+  content:"";
+  position:absolute;
+  left:0; bottom:0;
+  width:0%;
+  height:3px;
+  background:var(--brand);
+  transition:width .45s ease;
+}
+.stats-card:hover::after{
+  width:100%;
+}
+
+/* Hero image soft zoom */
+.hero img{
+  transition: transform 3s ease-out, opacity .8s ease-out;
+  transform: scale(1.02);
+  opacity: .95;
+}
+.hero img:hover{
+  transform: scale(1.05);
+  opacity:1;
+}
+
+/* Button hover effects */
+.btn, .btn.secondary{
+  transition: background .25s ease, color .25s ease, box-shadow .25s ease;
+}
+.btn:hover{
+  box-shadow:0 4px 14px rgba(233,30,99,0.35);
+}
+.btn.secondary:hover{
+  background:var(--brand);
+  color:#fff;
+}
+
+/* Workflow emphasis on hover */
+.card-mini:hover h4{
+  color:var(--brand);
+  transition: color .25s ease;
+}
+
 
 
 

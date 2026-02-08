@@ -1,40 +1,254 @@
+/* ======================================
+   COLOR SYSTEM
+   ====================================== */
 :root{
-  --brand:#E91E63; /* LiquidMammo accent */
-  --ink:#0b1220; --muted:#475569; --bg:#ffffff; --panel:#f7f8fa; --line:#e5e7eb;
-  --ok:#0ea5a4; --warn:#d97706; --danger:#b91c1c;
+  --brand:#E91E63; /* LiquidMammo accent pink */
+  --ink:#0b1220;
+  --muted:#475569;
+  --bg:#ffffff;
+  --panel:#f7f8fa;
+  --line:#e5e7eb;
+
+  --ok:#0ea5a4;
+  --warn:#d97706;
+  --danger:#b91c1c;
 }
+
+/* ======================================
+   GLOBAL RESETS & TYPOGRAPHY
+   ====================================== */
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
-a{color:var(--brand);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:1080px;margin:0 auto;padding:24px}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+a{
+  color:var(--brand);
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
+
+/* ======================================
+   LAYOUT HELPERS
+   ====================================== */
+.container{
+  max-width:1080px;
+  margin:0 auto;
+  padding:24px;
+}
+
 .grid{display:grid;gap:24px}
+
 .grid-2{grid-template-columns:1fr}
-@media(min-width:960px){.grid-2{grid-template-columns:1.1fr .9fr}}
-hr{border:none;border-top:1px solid var(--line);margin:24px 0}
-.kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.04em;font-size:.82rem}
-.small{font-size:.92rem;color:#5f6b7a}
-.notice{background:#fff0f5;border:1px solid #ffd1e0;padding:12px;border-radius:8px}
-.badge{display:inline-block;background:#fee2f2;color:#b11557;border-radius:999px;padding:4px 10px;font-size:.78rem}
-.btn{display:inline-block;padding:12px 18px;border-radius:8px;border:1px solid var(--brand);color:#fff;background:var(--brand)}
-.btn.secondary{background:#fff;color:var(--brand)}
-header{border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:center;gap:10px}
-.brand img{height:36px}
-.hero{padding:80px 0;background:linear-gradient(180deg,#fff 0,#fff6fa 100%)}
-.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
-.section{padding:48px 0}
-.list-tight li{margin-bottom:8px}
-footer{background:#0b1220;color:#e6e9f2}
-footer a{color:#ffb3c7}
-.footer-grid{display:grid;gap:16px}
-@media(min-width:960px){.footer-grid{grid-template-columns:1fr auto}}
-.footer-logo{opacity:.8;filter:grayscale(100%);display:flex;align-items:center;gap:10px}
-.footer-logo img{height:22px;opacity:.7}
-.footer-note{font-size:.85rem;color:#cbd5e1}
-.price{font-size:2.15rem;font-weight:750}
-.table{width:100%;border-collapse:collapse}
-.table th,.table td{border-bottom:1px solid var(--line);padding:10px;text-align:left;font-size:.95rem}
-blockquote{border-left:4px solid var(--brand);padding-left:12px;margin:8px 0;color:#374151}
+@media(min-width:960px){
+  .grid-2{grid-template-columns:1.1fr .9fr}
+}
+
+hr{
+  border:none;
+  border-top:1px solid var(--line);
+  margin:24px 0;
+}
+
+/* ======================================
+   TEXT UTILITY CLASSES
+   ====================================== */
+.kicker{
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  font-size:.82rem;
+}
+
+.small{font-size:.92rem;color:#5f6b7a;}
+
+.notice{
+  background:#fff0f5;
+  border:1px solid #ffd1e0;
+  padding:12px;
+  border-radius:8px;
+}
+
+/* BADGES */
+.badge{
+  display:inline-block;
+  background:#fee2f2;
+  color:#b11557;
+  border-radius:999px;
+  padding:4px 10px;
+  font-size:.78rem;
+}
+
+/* ======================================
+   BUTTONS
+   ====================================== */
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:8px;
+  border:1px solid var(--brand);
+  color:#fff;
+  background:var(--brand);
+}
+
+.btn.secondary{
+  background:#fff;
+  color:var(--brand);
+}
+
+/* ======================================
+   HEADER & NAVIGATION (IMPROVED)
+   ====================================== */
+header{
+  border-bottom:4px solid var(--brand); /* pink underline */
+  padding:14px 0;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+/* Logo + brand */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.brand img{
+  height:64px;   /* MORE PROMINENT LOGO */
+  width:auto;
+}
+
+/* Navigation links */
+nav a{
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
+}
+
+nav a:hover{
+  background:var(--brand);
+  color:#fff;
+  text-decoration:none;
+}
+
+/* MOBILE HEADER */
+@media(max-width:600px){
+  nav{
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+  }
+
+  .brand img{
+    height:56px;
+  }
+
+  nav a{
+    padding:8px 12px;
+  }
+}
+
+/* ======================================
+   HERO SECTION
+   ====================================== */
+.hero{
+  padding:80px 0;
+  background:linear-gradient(180deg,#fff 0,#fff6fa 100%);
+}
+
+/* ======================================
+   CARDS & SECTIONS
+   ====================================== */
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:20px;
+}
+
+.section{
+  padding:48px 0;
+}
+
+.list-tight li{
+  margin-bottom:8px;
+}
+
+/* ======================================
+   FOOTER
+   ====================================== */
+footer{
+  background:#0b1220;
+  color:#e6e9f2;
+}
+
+footer a{
+  color:#ffb3c7;
+}
+
+.footer-grid{
+  display:grid;
+  gap:16px;
+}
+
+@media(min-width:960px){
+  .footer-grid{grid-template-columns:1fr auto}
+}
+
+.footer-logo{
+  opacity:.8;
+  filter:grayscale(100%);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.footer-logo img{
+  height:22px;
+  opacity:.7;
+}
+
+.footer-note{
+  font-size:.85rem;
+  color:#cbd5e1;
+}
+
+/* ======================================
+   PRICING TABLES, BLOCKQUOTES
+   ====================================== */
+.price{
+  font-size:2.15rem;
+  font-weight:750;
+}
+
+.table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.table th,
+.table td{
+  border-bottom:1px solid var(--line);
+  padding:10px;
+  text-align:left;
+  font-size:.95rem;
+}
+
+blockquote{
+  border-left:4px solid var(--brand);
+  padding-left:12px;
+  margin:8px 0;
+  color:#374151;
+}

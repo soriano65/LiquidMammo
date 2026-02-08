@@ -205,7 +205,7 @@ nav{
 }
 
 .card-mini{
-  background:#ffffff;        /* white */
+  background:#ffffff;
   border:1px solid var(--line);
   border-radius:10px;
   padding:18px;

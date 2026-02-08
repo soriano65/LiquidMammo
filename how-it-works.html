@@ -4,36 +4,195 @@
   <meta charset="utf-8" />
   <title>How It Works | LiquidMammo™</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
-</head>
-<body>
-<header class="container"><nav><a href="index.html">← Home</a></nav></header>
-<main class="container">
-  <h1>How LiquidMammo Works</h1>
-  <ol>
-    <li><strong>Order</strong> — A clinician orders LiquidMammo during routine care.</li>
-    <li><strong>Blood Draw</strong> — Standard venipuncture; no compression or ionizing radiation.</li>
-    <li><strong>microRNA Panel</strong> — Plasma is assayed for a proprietary microRNA signature associated with breast cancer biology.</li>
-    <li><strong>AI‑assisted Analysis</strong> — Model estimates probability of malignancy and provides signature insights (“tipification”) to help guide next steps.</li>
-    <li><strong>Clinician Report</strong> — Clear summary to complement clinical judgment and imaging; biopsy/imaging remain confirmatory.</li>
-  </ol>
-  <hr/>
-  <h2>Why an adjunct test?</h2>
-  <p>
-    Screening mammograms can miss cancers (false‑negatives) and the risk is higher in dense breasts.
-    Large U.S. datasets suggest false‑negative rates have increased over time, underscoring the need for complementary approaches.
-  </p>
-  <p>
-    This is especially relevant for younger women: roughly 50–74% of women aged 40–49 have dense breasts, and mammography sensitivity in extremely dense tissue falls to about 61%.
-    Among women under 56, half of interval cancers are attributed to density‑related masking (NEJM 2007).
-    <a href="evidence.html">Full evidence →</a>
-  </p>
-  <div class="notice">
-    Regulatory disclosure: LiquidMammo is being developed as a <strong>CLIA Laboratory Developed Test (LDT)</strong> and is not yet FDA‑cleared/approved.
-  </div>
-</main>
-<footer class="container small">© <script>document.write(new Date().getFullYear())</script> MultiOmics Inc.</footer>
-</body>
+  <meta
+    name="description"
+    content="How LiquidMammo™ works: a non-invasive microRNA blood test designed to complement breast cancer screening, especially in dense breasts."
+  />
 
+  <!-- Styles -->
+  assets/css/styles.css
+
+  <!-- Favicon -->
+  favicon.png
+</head>
+
+<body>
+
+<header class="container">
+  <nav>index.html← Home</a></nav>
+</header>
+
+<main class="container">
+
+  <h1>How LiquidMammo™ Works</h1>
+
+  <!-- Intro -->
+  <section class="section-tight">
+    <p>
+      LiquidMammo™ is being developed as a <strong>microRNA-based liquid biopsy</strong> that provides a
+      <strong>biological signal</strong> of breast cancer risk to complement mammography—especially in
+      <strong>dense-breasted</strong> individuals where imaging sensitivity is reduced.
+    </p>
+
+    <p class="notice" style="margin-top:14px;">
+      LiquidMammo is currently in development as a <strong>CLIA Laboratory Developed Test (LDT)</strong> and
+      is <strong>not yet FDA‑cleared/approved</strong>.
+    </p>
+  </section>
+
+  <!-- Why a liquid biopsy matters -->
+  <section class="panel-light section-tight">
+    <h2>Why a blood‑based test?</h2>
+
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:18px;">
+      <div class="card-mini">
+        <h4>Density-independent</h4>
+        <p class="small">
+          microRNA signals are not affected by tissue density, eliminating one of the biggest limitations
+          of mammography for many women.
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>Early biological changes</h4>
+        <p class="small">
+          microRNAs involved in cancer pathways can shift <em>before</em> structural changes become visible
+          on imaging.
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>Simple &amp; non-invasive</h4>
+        <p class="small">
+          Only a blood draw—no radiation, no compression, no specialized scheduling.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main workflow -->
+  <section class="section-tight">
+    <h2>The process</h2>
+    <p>
+      LiquidMammo is designed to integrate easily into routine clinical workflows. Here’s how the process works:
+    </p>
+
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:22px;">
+      
+      <div class="card-mini">
+        <h4>1 — Order placed by clinician</h4>
+        <p class="small">
+          A clinician orders the test during a routine visit. No fasting or preparation is required.
+          Phlebotomy can occur in‑clinic or via standard partner labs.
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>2 — Blood draw &amp; microRNA stabilization</h4>
+        <p class="small">
+          A small blood sample is collected and stabilized via standard laboratory tubes to preserve
+          <span class="scientific-term">microRNA</span> integrity for analysis.
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>3 — Laboratory analysis</h4>
+        <p class="small">
+          Plasma is processed under controlled SOPs. A multi-marker microRNA signature associated with
+          breast cancer pathways is quantified and analyzed.
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>4 — Actionable report to clinician</h4>
+        <p class="small">
+          Your clinician receives a structured result with interpretation and recommended next steps,
+          such as routine screening or diagnostic follow‑up if indicated.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Biological mechanism -->
+  <section class="panel-light section-tight">
+    <h2>The science inside the test</h2>
+
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:16px;">
+
+      <div class="card-mini">
+        <h4>microRNA dysregulation</h4>
+        <p class="small">
+          Breast tumors release or alter levels of specific microRNAs involved in oncogenic pathways
+          (proliferation, apoptosis, immune evasion).
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>Signal detected in blood</h4>
+        <p class="small">
+          These circulating microRNAs can be measured in plasma, generating a molecular pattern that
+          distinguishes cancer from non‑cancer states.
+        </p>
+      </div>
+
+      <div class="card-mini">
+        <h4>Multi‑marker signature</h4>
+        <p class="small">
+          LiquidMammo uses a combination of markers—not a single microRNA—to improve sensitivity,
+          specificity, and robustness across populations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intended use -->
+  <section class="section-tight">
+    <h2>Intended use</h2>
+    <p>
+      LiquidMammo is being designed as a <strong>supplemental screening tool</strong> to help clinicians
+      determine when additional imaging or closer monitoring may be appropriate. It is not intended to replace
+      mammography or clinical breast exams.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <h2>Learn more or get involved</h2>
+
+    <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap;">
+      patients.html#patientsInformation for Patients</a>
+      clinicians.html#enrollClinician Enrollment</a>
+      contact.html#inquiryContact Us</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <strong>LiquidMammo™</strong><br/>
+      A test developed by MultiOmics Inc.
+      <p class="footer-note">
+        MultiOmics Inc. is headquartered in Washington, DC, and operates out of LabCentral,
+        Cambridge, MA (MIT innovation ecosystem).
+      </p>
+    </div>
+
+    <div class="footer-logo" style="justify-content:flex-end;text-align:right">
+      assets/logos/multiomics-logo.png
+      <div class="footer-note" style="line-height:1.2">Developed by<br/>MultiOmics Inc.</div>
+    </div>
+  </div>
+
+  <div class="container footer-note">
+    © <script>document.write(new Date().getFullYear())</script> MultiOmics Inc. •
+    privacy.htmlPrivacy &amp; Compliance</a> •
+    contact.htmlContact</a>
+  </div>
+</footer>
+
+</body>
 </html>
+

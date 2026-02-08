@@ -19,11 +19,14 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 
+html{scroll-behavior:smooth;}
+
 body{
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   color:var(--ink);
   background:var(--bg);
   line-height:1.5;
+  font-size:16px;
 }
 
 a{
@@ -91,6 +94,15 @@ hr{
   border-radius:8px;
 }
 
+.eyebrow{
+  display:inline-block;
+  color:var(--brand);
+  font-weight:700;
+  font-size:.88rem;
+  letter-spacing:.02em;
+  margin-bottom:6px;
+}
+
 /* ======================================
    BUTTONS
    ====================================== */
@@ -102,11 +114,22 @@ hr{
   color:#fff;
   background:var(--brand);
   font-weight:600;
+  box-shadow:0 4px 12px rgba(233,30,99,0.25);
+  transition:background .25s ease, box-shadow .25s ease, transform .2s ease;
+}
+
+.btn:hover{
+  background:#d0175a;
+  transform:translateY(-1px);
+  box-shadow:0 6px 18px rgba(233,30,99,0.35);
 }
 
 .btn.secondary{
   background:#fff;
   color:var(--brand);
+}
+.btn.secondary:hover{
+  background:#ffe5ef;
 }
 
 /* ======================================
@@ -115,6 +138,7 @@ hr{
 header{
   border-bottom:4px solid var(--brand);
   padding:16px 0;
+  background:linear-gradient(180deg,#ffe5ef 0%, #ffffff 68%);
 }
 
 nav{
@@ -128,18 +152,21 @@ nav{
 .brand{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
 }
 
 .brand img{
-  height:92px;
+  height:130px; /* bigger logo */
   width:auto;
+  filter:drop-shadow(0 4px 10px rgba(0,0,0,0.10));
 }
 
 .brand strong{
-  font-size:1.75rem;
-  font-weight:800;
-  letter-spacing:-0.5px;
+  font-size:2.35rem; /* bigger brand */
+  font-weight:900;
+  letter-spacing:-0.8px;
+  color:var(--brand);
+  text-shadow:0 1px 3px rgba(0,0,0,0.15);
 }
 
 /* MOBILE NAV */
@@ -151,11 +178,11 @@ nav{
   }
 
   .brand img{
-    height:72px;
+    height:95px;
   }
 
   .brand strong{
-    font-size:1.5rem;
+    font-size:1.9rem;
   }
 }
 
@@ -163,7 +190,7 @@ nav{
    HERO SECTION (IMAGE-BASED)
    ====================================== */
 .hero{
-  padding:60px 0;
+  padding:56px 0;
 }
 
 .hero img{
@@ -171,11 +198,25 @@ nav{
   border-radius:12px;
   display:block;
   object-fit:cover;
+  transition: transform 3s ease-out, opacity .8s ease-out;
+  transform: scale(1.02);
+  opacity:.95;
 }
 
-/* Optional tighter variant for hero sections */
+.hero img:hover{
+  transform: scale(1.05);
+  opacity:1;
+}
+
 .hero-tight{
   padding:48px 0;
+}
+
+.cta-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:16px 0 6px;
 }
 
 /* ======================================
@@ -186,6 +227,7 @@ nav{
   border:1px solid var(--line);
   border-radius:12px;
   padding:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
 }
 
 .card-mini{
@@ -193,6 +235,7 @@ nav{
   border:1px solid var(--line);
   border-radius:10px;
   padding:18px;
+  transition: box-shadow .25s ease, transform .25s ease;
 }
 
 .card-mini h4{
@@ -200,27 +243,55 @@ nav{
   font-size:1.05rem;
 }
 
+.card-mini:hover{
+  box-shadow:0 10px 22px rgba(0,0,0,0.08);
+  transform:translateY(-3px);
+}
+
 .stats-card{
   border-left:4px solid var(--brand);
   padding:22px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  position:relative;
+  overflow:hidden;
 }
 
-/* Light medical panel */
+.stats-card::after{
+  content:"";
+  position:absolute;
+  left:0; bottom:0;
+  width:0%;
+  height:3px;
+  background:var(--brand);
+  transition:width .45s ease;
+}
+.stats-card:hover::after{
+  width:100%;
+}
+
 .panel-light{
   background:var(--panel);
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
 }
 
+/* Highlight / Note card */
+.note-card{
+  background:#fff5fa;
+  border:1px solid #ffd1e0;
+  border-radius:10px;
+}
+
 /* ======================================
    SECTIONS
    ====================================== */
 .section{
-  padding:48px 0;
+  padding:44px 0;
 }
 
 .section-tight{
-  padding:36px 0;
+  padding:34px 0;
 }
 
 /* ======================================
@@ -305,12 +376,7 @@ footer a{
    ANIMATIONS & INTERACTIONS
    ====================================== */
 
-/* Smooth scroll to anchors */
-html{
-  scroll-behavior:smooth;
-}
-
-/* Fade-in for major blocks */
+/* Fade-in */
 section, .card, .card-mini, .stats-card, .hero img{
   animation:fadeIn 0.8s ease-out both;
 }
@@ -320,49 +386,11 @@ section, .card, .card-mini, .stats-card, .hero img{
   100%{opacity:1; transform:translateY(0);}
 }
 
-/* Stagger grid children */
+/* Stagger (FIXED: removed &gt;) */
 .grid > *:nth-child(1){ animation-delay:.05s; }
 .grid > *:nth-child(2){ animation-delay:.15s; }
 .grid > *:nth-child(3){ animation-delay:.25s; }
 .grid > *:nth-child(4){ animation-delay:.35s; }
-
-/* Card elevation on hover */
-.card, .card-mini{
-  transition: box-shadow .25s ease, transform .25s ease;
-}
-.card:hover, .card-mini:hover{
-  box-shadow:0 8px 22px rgba(0,0,0,0.08);
-  transform:translateY(-3px);
-}
-
-/* Stats card underline indicator on hover */
-.stats-card{
-  position:relative;
-  overflow:hidden;
-}
-.stats-card::after{
-  content:"";
-  position:absolute;
-  left:0; bottom:0;
-  width:0%;
-  height:3px;
-  background:var(--brand);
-  transition:width .45s ease;
-}
-.stats-card:hover::after{
-  width:100%;
-}
-
-/* Hero image soft zoom */
-.hero img{
-  transition: transform 3s ease-out, opacity .8s ease-out;
-  transform: scale(1.02);
-  opacity: .95;
-}
-.hero img:hover{
-  transform: scale(1.05);
-  opacity:1;
-}
 
 /* Button hover effects */
 .btn, .btn.secondary{
@@ -379,9 +407,9 @@ section, .card, .card-mini, .stats-card, .hero img{
 /* Workflow emphasis */
 .card-mini:hover h4{
   color:var(--brand);
-  transition: color .25s ease;
+  transition:color .25s ease;
 }
-``
+
 
 
 

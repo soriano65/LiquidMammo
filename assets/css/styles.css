@@ -57,11 +57,11 @@ hr{
 }
 
 /* ======================================
-   TEXT UTILITIES (FIXED microRNA ISSUE)
+   TEXT UTILITIES (microRNA FIX APPLIED)
    ====================================== */
 .kicker{
   color:var(--muted);
-  /* text-transform:uppercase;  <-- REMOVED to prevent MICRO becoming MICRO */
+  /* text-transform:uppercase;  <-- REMOVED so “microRNA” stays correct */
   letter-spacing:.04em;
   font-size:.82rem;
 }
@@ -75,7 +75,6 @@ hr{
   border-radius:8px;
 }
 
-/* BADGE */
 .badge{
   display:inline-block;
   background:#fee2f2;
@@ -103,37 +102,46 @@ hr{
 }
 
 /* ======================================
-   HEADER & NAVIGATION (IMPROVED)
+   HEADER & NAVIGATION (BIGGER LOGO + BRAND)
    ====================================== */
 header{
-  border-bottom:4px solid var(--brand); /* pink underline */
-  padding:14px 0;
+  border-bottom:4px solid var(--brand);
+  padding:20px 0;
 }
 
 nav{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
   flex-wrap:wrap;
+  gap:24px;
 }
 
-/* Logo + brand */
+/* Logo + brand text */
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:14px;
 }
 
 .brand img{
-  height:64px;   /* BIGGER, MORE PROMINENT LOGO */
+  height:92px;   /* BIGGER LOGO */
   width:auto;
 }
 
+.brand strong{
+  font-size:1.75rem;   /* BIGGER PRODUCT NAME */
+  font-weight:800;
+  letter-spacing:-0.5px;
+  color:var(--ink);
+}
+
+/* Navigation links */
 nav a{
   font-weight:600;
-  padding:6px 10px;
+  padding:8px 14px;
   border-radius:6px;
+  font-size:1.05rem;
 }
 
 nav a:hover{
@@ -147,15 +155,20 @@ nav a:hover{
   nav{
     flex-direction:column;
     align-items:center;
-    gap:14px;
+    gap:18px;
   }
 
   .brand img{
-    height:56px;
+    height:78px; /* still large on mobile */
+  }
+
+  .brand strong{
+    font-size:1.5rem;
   }
 
   nav a{
-    padding:8px 12px;
+    padding:10px 14px;
+    font-size:1.1rem;
   }
 }
 
@@ -225,7 +238,7 @@ footer a{
 }
 
 /* ======================================
-   PRICING TABLES, BLOCKQUOTES
+   TABLES & BLOCKQUOTES
    ====================================== */
 .price{
   font-size:2.15rem;
@@ -251,4 +264,5 @@ blockquote{
   margin:8px 0;
   color:#374151;
 }
+
 

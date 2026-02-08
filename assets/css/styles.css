@@ -386,25 +386,27 @@ section, .card, .card-mini, .stats-card, .hero img{
   100%{opacity:1; transform:translateY(0);}
 }
 
-/* Stagger (FIXED — no more &gt;) */
+/* Stagger — FIXED (was &gt;, now >) */
 .grid > *:nth-child(1){ animation-delay:.05s; }
 .grid > *:nth-child(2){ animation-delay:.15s; }
 .grid > *:nth-child(3){ animation-delay:.25s; }
 .grid > *:nth-child(4){ animation-delay:.35s; }
 
-/* Button hover effects */
+/* Button hover */
 .btn, .btn.secondary{
   transition: background .25s ease, color .25s ease, box-shadow .25s ease;
 }
+
 .btn:hover{
   box-shadow:0 4px 14px rgba(233,30,99,0.35);
 }
+
 .btn.secondary:hover{
   background:var(--brand);
   color:#fff;
 }
 
-/* Workflow emphasis */
+/* Card title hover */
 .card-mini:hover h4{
   color:var(--brand);
   transition:color .25s ease;

@@ -10,10 +10,10 @@
   <meta name="description" content="LiquidMammo is a microRNA-based blood test that complements breast cancer screening, especially for women with dense breasts.">
 
   <!-- Stylesheet -->
-  assets/css/styles.css
+  <link rel="stylesheet" href="assets/css/styles.css">
 
   <!-- Favicon -->
-  favicon.png
+  <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body>
@@ -22,25 +22,25 @@
      HEADER
 ======================================= -->
 <header style="background:white; border-bottom:4px solid #E91E63; padding:14px 0;">
-  <div class="container" style="margin:0 auto;">
+  <div class="container">
     <nav style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:22px;">
 
       <div class="brand" style="display:flex; align-items:center; gap:18px;">
-        assets/logos/liquidmammo-logo.png
+        <img src="assets/logos/liquidmammo-logo.png" alt="LiquidMammo logo" style="height:160px; width:auto;">
         <strong style="font-size:2.35rem; font-weight:900; letter-spacing:-0.8px; color:#E91E63;">LiquidMammo™</strong>
       </div>
 
-      <div class="nav-links" style="display:flex; flex-wrap:wrap; gap:20px; font-weight:500; color:#E91E63;">
-        how-it-works.htmlHow It Works</a>
-        science.htmlScience</a>
-        evidence.htmlEvidence</a>
-        patients.htmlPatients</a>
-        clinicians.htmlClinicians</a>
-        biobank.htmlBiobank</a>
-        pricing.htmlPricing</a>
-        contact.htmlContact</a>
-        privacy.htmlPrivacy</a>
-        about.htmlAbout</a>
+      <div class="nav-links" style="display:flex; flex-wrap:wrap; gap:20px; font-weight:500;">
+        <a href="how-it-works.html">How It Works</a>
+        <a href="science.html">Science</a>
+        <a href="evidence.html">Evidence</a>
+        <a href="patients.html">Patients</a>
+        <a href="clinicians.html">Clinicians</a>
+        <a href="biobank.html">Biobank</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="about.html">About</a>
       </div>
 
     </nav>
@@ -51,27 +51,28 @@
 <!-- ======================================
      HERO
 ======================================= -->
-<section style="padding:32px 0; text-align:center;">
-  <div class="container" style="margin:0 auto;">
+<section class="hero" style="padding:36px 0; text-align:center;">
+  <div class="container">
 
     <h1 style="font-size:2.4rem; margin-bottom:10px; font-weight:800;">
       Breast cancer screening reimagined
     </h1>
 
     <p class="small" style="max-width:650px; margin:0 auto 22px auto;">
-      A supplemental microRNA-based blood test that adds biological insight to mammography — 
+      A supplemental microRNA-based blood test that adds biological insight to mammography —
       particularly helpful in dense breast tissue, where imaging may miss early signs.
     </p>
 
-    <div style="display:flex; justify-content:center; gap:14px;">
-      patients.html#joinJoin Early Access</a>
-      clinicians.html#enrollClinician Enrollment</a>
+    <div class="cta-row" style="display:flex; justify-content:center; gap:14px;">
+      <a class="btn" href="patients.html#join">Join Early Access</a>
+      <a class="btn secondary" href="clinicians.html#enroll">Clinician Enrollment</a>
     </div>
 
     <p class="notice" style="max-width:600px; margin:22px auto 0 auto;">
-      LiquidMammo is being developed as a <strong>CLIA Laboratory Developed Test (LDT)</strong>; 
+      LiquidMammo is being developed as a <strong>CLIA Laboratory Developed Test (LDT)</strong>;
       it is not yet FDA‑cleared or FDA‑approved.
     </p>
+
   </div>
 </section>
 
@@ -79,8 +80,8 @@
 <!-- ======================================
      WHY IT MATTERS
 ======================================= -->
-<section class="panel-light" style="padding:28px 0;">
-  <div class="container grid-3" style="margin:0 auto; text-align:center; justify-items:center;">
+<section class="panel-light">
+  <div class="container grid-3">
 
     <div class="card-mini">
       <h4>Dense breasts challenge mammography</h4>
@@ -102,16 +103,15 @@
 
 
 <!-- ======================================
-     CLINICAL CONTEXT — CLEAN VERSION
+     CLINICAL CONTEXT
 ======================================= -->
-<section style="padding:28px 0;">
-  <div class="container" style="margin:0 auto; text-align:center;">
+<section>
+  <div class="container" style="text-align:center;">
 
     <h2>Clinical context</h2>
 
     <div class="grid-3" style="justify-items:center; text-align:center;">
 
-      <!-- Column 1 -->
       <div class="stats-card">
         <ul class="list-tight">
           <li><strong>Mammograms have limitations</strong>, especially in dense breasts.</li>
@@ -120,20 +120,18 @@
         </ul>
       </div>
 
-      <!-- Column 2 -->
       <div class="stats-card">
         <ul class="list-tight">
           <li>In very dense tissue, mammogram sensitivity can fall to <strong>~61%</strong>.</li>
           <li>Younger women tend to have denser breasts, making detection harder.</li>
-          <li>Screening performance varies with density, age, and imaging equipment.</li>
+          <li>Screening performance varies with density, age, and equipment.</li>
         </ul>
       </div>
 
-      <!-- Conclusion -->
       <div class="card note-card">
         <p class="small">
-          LiquidMammo is designed to <strong>support—not replace—mammography</strong>.  
-          Adding a biological signal gives clinicians an additional layer of insight 
+          LiquidMammo is designed to <strong>support—not replace—imaging</strong>.
+          Adding a biological signal gives clinicians an additional layer of insight
           to strengthen early detection.
         </p>
       </div>
@@ -147,11 +145,11 @@
 <!-- ======================================
      HOW IT WORKS
 ======================================= -->
-<section class="panel-light" style="padding:28px 0;">
-  <div class="container" style="margin:0 auto; text-align:center;">
+<section class="panel-light">
+  <div class="container" style="text-align:center;">
     <h2>How it works</h2>
 
-    <div class="grid-3" style="justify-items:center; text-align:center;">
+    <div class="grid-3">
 
       <div class="card-mini">
         <h4>1 — Ordered by clinician</h4>
@@ -176,8 +174,8 @@
 <!-- ======================================
      FOOTER
 ======================================= -->
-<footer style="padding:20px 0;">
-  <div class="container footer-grid" style="margin:0 auto;">
+<footer>
+  <div class="container footer-grid">
 
     <div>
       <strong>LiquidMammo™</strong><br/>
@@ -189,18 +187,16 @@
     </div>
 
     <div class="footer-logo" style="text-align:right;">
-      assets/logos/multiomics-logo.png
-      <div class="footer-note" style="line-height:1.2">
-        Developed by<br/>MultiOmics Inc.
-      </div>
+      <img src="assets/logos/multiomics-logo.png" alt="MultiOmics logo" style="height:24px;">
+      <div class="footer-note" style="line-height:1.2">Developed by<br/>MultiOmics Inc.</div>
     </div>
 
   </div>
 
   <div class="container footer-note" style="margin-top:14px; text-align:center;">
     © <script>document.write(new Date().getFullYear())</script> MultiOmics Inc. •
-    privacy.htmlPrivacy &amp; Compliance</a> •
-    contact.htmlOrder / Kits</a>
+    <a href="privacy.html">Privacy &amp; Compliance</a> •
+    <a href="contact.html">Order / Kits</a>
   </div>
 </footer>
 

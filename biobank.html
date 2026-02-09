@@ -6,11 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="description"
-        content="The MultiOmics Biobank supports LiquidMammo™ discovery and validation with longitudinal breast‑cancer samples, enabling retrospective microRNA panel testing." />
+        content="The MultiOmics Biobank supports LiquidMammo™ discovery and validation with longitudinal breast‑cancer samples, enabling retrospective microRNA panel testing.">
+
+  <!-- Canonical (optional but recommended when live) -->
+  <link rel="canonical" href="https://www.liquidmammo.com/biobank.html" />
 
   <!-- Stylesheet -->
-  assets/css/styles.css
-  favicon.png
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Open Graph (helpful for sharing) -->
+  <meta property="og:title" content="Biobank | LiquidMammo™">
+  <meta property="og:description" content="MultiOmics Biobank: longitudinal breast-cancer resource for discovery and retrospective validation of microRNA-based panels.">
+  <meta property="og:url" content="https://www.liquidmammo.com/biobank.html">
+  <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -18,9 +29,9 @@
 <!-- ======================================
      MINIMAL HEADER (← Home)
 ======================================= -->
-<header class="container">
-  <nav>
-    index.html← Home</a>
+<header class="container" role="banner">
+  <nav aria-label="Main">
+    <a href="/index.html" aria-label="Back to Home">← Home</a>
   </nav>
 </header>
 
@@ -28,12 +39,13 @@
 <!-- ======================================
      MAIN CONTENT
 ======================================= -->
-<main class="container">
+<main class="container" id="main-content">
 
   <h1>MultiOmics Biobank</h1>
 
   <!-- Overview -->
-  <section class="section-tight">
+  <section class="section-tight" aria-labelledby="overview">
+    <h2 id="overview" class="visually-hidden">Overview</h2>
     <p>
       The MultiOmics Biobank is a longitudinal breast‑cancer resource enabling rapid, retrospective
       discovery and validation of <span class="scientific-term">microRNA</span>‑based diagnostic panels.
@@ -44,120 +56,121 @@
 
 
   <!-- Proof points -->
-  <section class="panel-light section-tight">
+  <section class="panel-light section-tight" aria-labelledby="proof">
+    <h2 id="proof" class="visually-hidden">Proof points</h2>
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
-      <div class="card">
-        <h3>Scale & history</h3>
+      <article class="card">
+        <h3>Scale &amp; history</h3>
         <p>
           ~20,000 breast‑cancer samples with longitudinal clinical context, including cohorts back to
           <strong>2008</strong> — enabling retrospective performance assessment of candidate panels.
         </p>
-      </div>
+      </article>
 
-      <div class="card">
-        <h3>Consent & provenance</h3>
+      <article class="card">
+        <h3>Consent &amp; provenance</h3>
         <p>
           The DNA consent pathway was originally developed at <strong>Baylor</strong>. Samples and data are
           maintained by <strong>MultiOmics</strong> with consent‑based access controls and participant protection.
         </p>
-      </div>
+      </article>
     </div>
   </section>
 
 
   <!-- What we bank -->
-  <section class="section-tight">
-    <h2>What we bank</h2>
+  <section class="section-tight" aria-labelledby="what-we-bank">
+    <h2 id="what-we-bank">What we bank</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Specimens</h4>
         <p class="small">
           Blood‑based materials suitable for <span class="scientific-term">microRNA</span> profiling.
           Where available, paired tissue or additional biospecimens support biology‑aware modeling.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Linked clinical data</h4>
         <p class="small">
           Longitudinal context (diagnosis, subtype, imaging confirmation, and time‑to‑event where
           available) supports rigorous label definition. Datasets are de‑identified prior to release.
         </p>
-      </div>
+      </article>
 
     </div>
   </section>
 
 
   <!-- Use cases -->
-  <section class="section-tight">
-    <h2>How investigators use the biobank</h2>
+  <section class="section-tight" aria-labelledby="use-cases">
+    <h2 id="use-cases">How investigators use the biobank</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Discovery</h4>
         <p class="small">
           Identify and refine candidate <span class="scientific-term">microRNA</span> signatures, optimize
           normalization, feature selection, and modeling approaches.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Retrospective validation</h4>
         <p class="small">
           Evaluate sensitivity, specificity, AUC, and subgroup performance using historical samples
           with known outcomes — reducing risk ahead of prospective studies.
         </p>
-      </div>
+      </article>
 
     </div>
   </section>
 
 
   <!-- Governance -->
-  <section id="governance" class="panel-light section-tight">
-    <h2>Governance & participant protections</h2>
+  <section id="governance" class="panel-light section-tight" aria-labelledby="governance-title">
+    <h2 id="governance-title">Governance &amp; participant protections</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
 
-      <div class="card-mini">
-        <h4>Consent & privacy</h4>
+      <article class="card-mini">
+        <h4>Consent &amp; privacy</h4>
         <p class="small">
           All access follows informed‑consent pathways with strict data‑minimization and privacy
           safeguards. Only de‑identified outputs leave MultiOmics environments.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
-        <h4>Scientific & ethics review</h4>
+      <article class="card-mini">
+        <h4>Scientific &amp; ethics review</h4>
         <p class="small">
           Requests undergo documented review for scientific merit, feasibility, and ethical
           compliance. IRB documentation required when applicable.
         </p>
-      </div>
+      </article>
 
     </div>
   </section>
 
 
   <!-- Access process -->
-  <section id="access" class="section">
-    <h2>Accessing the biobank</h2>
+  <section id="access" class="section" aria-labelledby="accessing">
+    <h2 id="accessing">Accessing the biobank</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
 
-      <div class="card">
+      <article class="card">
         <h3>Who can apply</h3>
         <p>
           Academic, clinical, or industry researchers working on diagnostic discovery, validation, or
           clinical‑utility studies — especially early detection and dense‑breast challenges.
         </p>
-      </div>
+      </article>
 
-      <div class="card">
+      <article class="card">
         <h3>How to request</h3>
 
         <ol class="list-tight">
@@ -167,36 +180,36 @@
         </ol>
 
         <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-          contact.html#biobankStart a Request</a>
-          privacy.html#data-useData Use & Privacy</a>
+          <a class="button" href="/contact.html#biobank">Start a Request</a>
+          <a class="button button-secondary" href="/privacy.html#data-use">Data Use &amp; Privacy</a>
         </div>
-      </div>
+      </article>
 
     </div>
   </section>
 
 
   <!-- FAQ -->
-  <section class="section-tight">
-    <h2>Frequently asked</h2>
+  <section class="section-tight" aria-labelledby="faq">
+    <h2 id="faq">Frequently asked</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Do you share raw or processed data?</h4>
         <p class="small">
           Both may be supported depending on consent scope. Raw data for discovery; processed
           outputs for validation.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Turnaround time</h4>
         <p class="small">
           Timelines vary with study complexity. Validation‑focused work is generally faster than
           multi‑arm discovery projects.
         </p>
-      </div>
+      </article>
 
     </div>
   </section>
@@ -207,7 +220,7 @@
 <!-- ======================================
      FOOTER
 ======================================= -->
-<footer>
+<footer role="contentinfo">
   <div class="container footer-grid">
 
     <div>
@@ -220,7 +233,7 @@
     </div>
 
     <div class="footer-logo" style="justify-content:flex-end; text-align:right;">
-      assets/logos/multiomics-logo.png
+      <img src="/assets/logos/multiomics-logo.png" alt="MultiOmics Inc. logo" width="160" height="auto" loading="lazy" />
       <div class="footer-note" style="line-height:1.2">
         Developed by<br />MultiOmics Inc.
       </div>
@@ -229,12 +242,17 @@
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
-    © <script>document.write(new Date().getFullYear())</script>
-    MultiOmics Inc. •
-    privacy.htmlPrivacy & Compliance</a> •
-    contact.htmlContact</a>
+    © <span id="year"></span> MultiOmics Inc. •
+    <a href="/privacy.html">Privacy &amp; Compliance</a> •
+    <a href="/contact.html">Contact</a>
   </div>
 </footer>
 
+<script>
+  // Year in footer (avoid document.write)
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+``

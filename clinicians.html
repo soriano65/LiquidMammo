@@ -6,11 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="description"
-        content="Information for clinicians about LiquidMammo™, a microRNA-based supplemental screening test developed to complement breast cancer detection, especially in dense breasts." />
+        content="Information for clinicians about LiquidMammo™, a microRNA-based supplemental screening test developed to complement breast cancer detection, especially in dense breasts.">
+
+  <!-- Canonical (optional, recommended when live at a stable URL) -->
+  <link rel="canonical" href="https://www.liquidmammo.com/clinicians.html" />
 
   <!-- Stylesheet -->
-  assets/css/styles.css
-  favicon.png
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Open Graph (optional but useful for sharing) -->
+  <meta property="og:title" content="Clinicians | LiquidMammo™">
+  <meta property="og:description" content="Clinical overview of LiquidMammo™, a microRNA-based supplemental screening test—particularly helpful in dense-breast populations.">
+  <meta property="og:url" content="https://www.liquidmammo.com/clinicians.html">
+  <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -18,9 +29,9 @@
 <!-- ======================================
      MINIMAL HEADER (← Home)
 ======================================= -->
-<header class="container">
-  <nav>
-    index.html← Home</a>
+<header class="container" role="banner">
+  <nav aria-label="Main">
+    <a href="/index.html" aria-label="Go to home">← Home</a>
   </nav>
 </header>
 
@@ -28,14 +39,15 @@
 <!-- ======================================
      MAIN CONTENT
 ======================================= -->
-<main class="container">
+<main class="container" id="main-content">
 
   <h1>Information for Clinicians</h1>
 
   <!-- Overview -->
-  <section class="section-tight">
+  <section class="section-tight" aria-labelledby="overview">
+    <h2 id="overview" class="visually-hidden">Overview</h2>
     <p>
-      LiquidMammo™ is a supplemental, non‑invasive <strong>microRNA‑based liquid biopsy</strong> designed
+      <strong>LiquidMammo™</strong> is a supplemental, non‑invasive <strong>microRNA‑based liquid biopsy</strong> designed
       to strengthen breast‑cancer screening performance — particularly in
       <strong>dense‑breast populations</strong> where mammographic sensitivity is reduced.
     </p>
@@ -48,39 +60,37 @@
 
 
   <!-- Why clinicians use it -->
-  <section class="panel-light section-tight">
-    <h2>Why consider a supplemental molecular test?</h2>
+  <section class="panel-light section-tight" aria-labelledby="why-consider">
+    <h2 id="why-consider">Why consider a supplemental molecular test?</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Improved assessment in dense breasts</h4>
         <p class="small">
           Mammographic sensitivity may fall to ~61% in BI‑RADS D tissue. Molecular signal is density‑independent.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
-        <h4>Non‑invasive & easy to add</h4>
+      <article class="card-mini">
+        <h4>Non‑invasive &amp; easy to add</h4>
         <p class="small">
           A routine blood draw — no radiation, no compression, minimal patient burden.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Supports clinical decision‑making</h4>
         <p class="small">
           Provides complementary biological information to guide follow‑up, escalation, or imaging selection.
         </p>
-      </div>
-
+      </article>
     </div>
   </section>
 
 
   <!-- Biological rationale -->
-  <section class="section-tight">
-    <h2>Biological rationale</h2>
+  <section class="section-tight" aria-labelledby="bio-rationale">
+    <h2 id="bio-rationale">Biological rationale</h2>
     <p>
       <span class="scientific-term">microRNAs</span> regulate gene expression across oncogenic pathways,
       including proliferation, immune modulation, DNA repair, and metastatic signaling.
@@ -90,39 +100,37 @@
 
 
   <!-- How the test works -->
-  <section class="section-tight">
-    <h2>How the test works</h2>
+  <section class="section-tight" aria-labelledby="how-it-works">
+    <h2 id="how-it-works">How the test works</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>1 — Order through your practice</h4>
         <p class="small">The test is clinician‑ordered, like routine lab assays. Phlebotomy in‑clinic or via partner labs.</p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>2 — Laboratory microRNA analysis</h4>
         <p class="small">
           Plasma is processed under controlled SOPs. A tumor‑associated <span class="scientific-term">microRNA</span>
           signature is quantified and analyzed.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>3 — Clinician‑ready report</h4>
         <p class="small">
           You receive a structured report including classification, density‑contextual interpretation,
           and recommendations.
         </p>
-      </div>
-
+      </article>
     </div>
   </section>
 
 
   <!-- Ideal use cases -->
-  <section class="panel-light section-tight">
-    <h2>Ideal patient populations</h2>
+  <section class="panel-light section-tight" aria-labelledby="ideal-patients">
+    <h2 id="ideal-patients">Ideal patient populations</h2>
 
     <ul class="list-tight">
       <li>Women with <strong>dense breasts</strong> (BI‑RADS C or D).</li>
@@ -135,27 +143,25 @@
 
 
   <!-- Interpretation -->
-  <section class="section-tight">
-    <h2>Interpreting results</h2>
+  <section class="section-tight" aria-labelledby="interpretation">
+    <h2 id="interpretation">Interpreting results</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Negative / Low‑risk</h4>
         <p class="small">
           Suggests no microRNA signature consistent with known cancer‑associated patterns.
           Continue guideline‑directed screening.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Positive / Elevated signal</h4>
         <p class="small">
           Indicates microRNA changes associated with tumor biology. Consider further imaging
           (diagnostic mammography, ultrasound, MRI).
         </p>
-      </div>
-
+      </article>
     </div>
 
     <p class="small" style="margin-top:10px;">
@@ -165,39 +171,37 @@
 
 
   <!-- Safety & compliance -->
-  <section class="panel-light section-tight">
-    <h2>Safety, quality, and compliance</h2>
+  <section class="panel-light section-tight" aria-labelledby="safety">
+    <h2 id="safety">Safety, quality, and compliance</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>CLIA environment</h4>
         <p class="small">
           Testing is performed in a certified CLIA laboratory under strict SOPs, QC steps, and proficiency testing.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Sample integrity</h4>
         <p class="small">
           Stabilized plasma collection ensures reproducibility. Chain‑of‑custody safeguards traceability.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
-        <h4>Privacy & security</h4>
+      <article class="card-mini">
+        <h4>Privacy &amp; security</h4>
         <p class="small">
           All patient data are de‑identified for analysis and processed under HIPAA‑aligned workflows.
         </p>
-      </div>
-
+      </article>
     </div>
   </section>
 
 
   <!-- Enrollment -->
-  <section id="enroll" class="section">
-    <h2>Clinician enrollment</h2>
+  <section id="enroll" class="section" aria-labelledby="enrollment">
+    <h2 id="enrollment">Clinician enrollment</h2>
 
     <p>
       We are onboarding a limited number of clinical partners for validation and early access.
@@ -205,8 +209,8 @@
     </p>
 
     <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
-      contact.html#cliniciansRequest Enrollment</a>
-      patients.html#patientsPatient Information</a>
+      <a class="button" href="/contact.html#clinicians" aria-label="Request Enrollment">Request Enrollment</a>
+      <a class="button secondary" href="/patients.html#patients" aria-label="Patient Information">Patient Information</a>
     </div>
   </section>
 
@@ -216,7 +220,7 @@
 <!-- ======================================
      FOOTER
 ======================================= -->
-<footer>
+<footer role="contentinfo">
   <div class="container footer-grid">
 
     <div>
@@ -229,7 +233,7 @@
     </div>
 
     <div class="footer-logo" style="justify-content:flex-end; text-align:right;">
-      assets/logos/multiomics-logo.png
+      <img src="/assets/logos/multiomics-logo.png" alt="MultiOmics Inc. logo" style="max-height:48px;" />
       <div class="footer-note" style="line-height:1.2">
         Developed by<br />MultiOmics Inc.
       </div>
@@ -238,11 +242,16 @@
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
-    © <script>document.write(new Date().getFullYear())</script> MultiOmics Inc. •
-    privacy.htmlPrivacy & Compliance</a> •
-    contact.htmlContact</a>
+    © <span id="year"></span> MultiOmics Inc. •
+    <a href="/privacy.html">Privacy &amp; Compliance</a> •
+    <a href="/contact.html">Contact</a>
   </div>
 </footer>
+
+<script>
+  // Year in footer (avoids document.write)
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Privacy & Compliance | LiquidMammo™</title>
+  <title>Privacy &amp; Compliance | LiquidMammo™</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta
@@ -10,11 +10,20 @@
     content="Privacy, data use, and compliance practices for LiquidMammo™ and MultiOmics Inc., including HIPAA alignment, consent, and participant protections."
   />
 
+  <!-- Canonical (optional but recommended when live at a stable URL) -->
+  <link rel="canonical" href="https://www.liquidmammo.com/privacy.html" />
+
   <!-- Stylesheet -->
-  assets/css/styles.css
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <!-- Favicon -->
-  favicon.png
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Open Graph (useful for sharing) -->
+  <meta property="og:title" content="Privacy &amp; Compliance | LiquidMammo™" />
+  <meta property="og:description" content="How MultiOmics protects privacy and complies with HIPAA and CLIA requirements." />
+  <meta property="og:url" content="https://www.liquidmammo.com/privacy.html" />
+  <meta property="og:type" content="website" />
 </head>
 
 <body>
@@ -22,9 +31,9 @@
 <!-- ======================================
      MINIMAL HEADER (← Home)
 ======================================= -->
-<header class="container">
-  <nav>
-    index.html← Home</a>
+<header class="container" role="banner">
+  <nav aria-label="Main">
+    <a href="/index.html" aria-label="Go to homepage">← Home</a>
   </nav>
 </header>
 
@@ -32,15 +41,16 @@
 <!-- ======================================
      MAIN CONTENT
 ======================================= -->
-<main class="container">
+<main class="container" id="main-content">
 
-  <h1>Privacy & Compliance</h1>
+  <h1>Privacy &amp; Compliance</h1>
 
   <!-- Overview -->
-  <section class="section-tight">
+  <section class="section-tight" aria-labelledby="overview">
+    <h2 id="overview" class="visually-hidden">Overview</h2>
     <p>
       MultiOmics Inc. maintains strict privacy, consent, and data‑security practices to protect
-      patient and clinical information associated with LiquidMammo™, our microRNA‑based supplemental screening test.
+      patient and clinical information associated with <strong>LiquidMammo™</strong>, our microRNA‑based supplemental screening test.
     </p>
 
     <p class="notice" style="margin-top:14px;">
@@ -51,8 +61,8 @@
 
 
   <!-- HIPAA -->
-  <section class="panel-light section-tight">
-    <h2>HIPAA alignment</h2>
+  <section class="panel-light section-tight" aria-labelledby="hipaa">
+    <h2 id="hipaa">HIPAA alignment</h2>
 
     <ul class="list-tight">
       <li>All Protected Health Information (PHI) is handled under HIPAA‑aligned workflows.</li>
@@ -65,8 +75,8 @@
 
 
   <!-- Consent -->
-  <section class="section-tight">
-    <h2>Consent & data use</h2>
+  <section class="section-tight" aria-labelledby="consent">
+    <h2 id="consent">Consent &amp; data use</h2>
 
     <p>
       All patient samples and associated information follow informed‑consent pathways that specify
@@ -83,8 +93,8 @@
 
 
   <!-- Data protections -->
-  <section class="panel-light section-tight">
-    <h2>Data protection safeguards</h2>
+  <section class="panel-light section-tight" aria-labelledby="safeguards">
+    <h2 id="safeguards">Data protection safeguards</h2>
 
     <ul class="list-tight">
       <li>Industry‑standard encryption and access controls.</li>
@@ -97,8 +107,8 @@
 
 
   <!-- LDT Compliance -->
-  <section class="section-tight">
-    <h2>CLIA LDT compliance</h2>
+  <section class="section-tight" aria-labelledby="ldt">
+    <h2 id="ldt">CLIA LDT compliance</h2>
 
     <p>
       LiquidMammo is developed and validated under CLIA Laboratory Developed Test practices.
@@ -114,8 +124,8 @@
 
 
   <!-- Data access requests -->
-  <section id="data-use" class="panel-light section-tight">
-    <h2>Data access requests</h2>
+  <section id="data-use" class="panel-light section-tight" aria-labelledby="data-access">
+    <h2 id="data-access">Data access requests</h2>
 
     <p class="small">
       Researchers requesting data access must submit a brief concept note outlining study aims.
@@ -123,35 +133,35 @@
     </p>
 
     <div style="margin-top:14px;">
-      contact.html#partnersSubmit a request</a>
+      <a href="/contact.html#partners">Submit a request</a>
     </div>
   </section>
 
 
   <!-- FAQ -->
-  <section class="section-tight">
-    <h2>Frequently asked</h2>
+  <section class="section-tight" aria-labelledby="faq">
+    <h2 id="faq">Frequently asked</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); margin-top:18px;">
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Do you sell or share patient data?</h4>
         <p class="small">Never. Data is not sold or used for marketing.</p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Do research partners receive PHI?</h4>
         <p class="small">
           No. Only de‑identified datasets may be shared following review and approval.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>How long is data retained?</h4>
         <p class="small">
           Retention follows CLIA, HIPAA, and state regulatory requirements.
         </p>
-      </div>
+      </article>
 
     </div>
   </section>
@@ -162,7 +172,7 @@
 <!-- ======================================
      FOOTER
 ======================================= -->
-<footer>
+<footer role="contentinfo">
   <div class="container footer-grid">
 
     <div>
@@ -175,7 +185,7 @@
     </div>
 
     <div class="footer-logo" style="justify-content:flex-end; text-align:right;">
-      assets/logos/multiomics-logo.png
+      <img src="/assets/logos/multiomics-logo.png" alt="MultiOmics Inc. logo" loading="lazy" style="max-height:40px;" />
       <div class="footer-note" style="line-height:1.2">
         Developed by<br />MultiOmics Inc.
       </div>
@@ -184,12 +194,16 @@
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
-    © <script>document.write(new Date().getFullYear())</script>
-    MultiOmics Inc. •
-    privacy.htmlPrivacy & Compliance</a> •
-    contact.htmlContact</a>
+    © <span id="year"></span> MultiOmics Inc. •
+    <a href="/privacy.html">Privacy &amp; Compliance</a> •
+    <a href="/contact.html">Contact</a>
   </div>
 </footer>
+
+<script>
+  // Year in footer (avoids document.write)
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

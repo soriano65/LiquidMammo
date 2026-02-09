@@ -10,16 +10,16 @@
   <meta name="description" content="LiquidMammo is a microRNA-based blood test that complements breast cancer screening, helping improve detection performance, especially in dense breasts.">
 
   <!-- Stylesheet -->
-  assets/css/styles.css
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
   <!-- Favicon -->
-  favicon.png
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 
 <body>
 
 <!-- ======================================
-     HEADER — MEDIUM-LARGE LOGO + WORDMARK
+     HEADER — LARGE LOGO + BRAND NAME
 ======================================= -->
 <header style="background:white; border-bottom:4px solid #E91E63; padding:18px 0;">
   <div class="container">
@@ -33,7 +33,9 @@
         </strong>
       </div>
 
-      <div class="nav-links" style="display:flex; flex-wrap:wrap; gap:22px; font-weight:500;">
+      <!-- ⭐ Pink navigation links -->
+      <div class="nav-links"
+           style="display:flex; flex-wrap:wrap; gap:22px; font-weight:500; color:#E91E63;">
         <a href="how-it-works.html">How It Works</a>
         <a href="science.html">Science</a>
         <a href="evidence.html">Evidence</a>
@@ -52,12 +54,11 @@
 
 
 <!-- ======================================
-     HERO — NO DUPLICATION OF TAGLINE
+     HERO
 ======================================= -->
 <section class="hero" style="padding:40px 0; text-align:center;">
   <div class="container">
 
-    <!-- Updated hero headline with correct branding -->
     <h1 style="font-size:2.4rem; margin-bottom:12px; font-weight:800;">
       Breast cancer screening reimagined
     </h1>
@@ -194,14 +195,16 @@
 
     <div class="footer-logo">
       <img src="assets/logos/multiomics-logo.png" alt="MultiOmics logo" style="height:22px;">
-      <div class="footer-note" style="line-height:1.2">Developed by<br/>MultiOmics Inc.</div>
+      <div class="footer-note" style="line-height:1.2">
+        Developed by<br/>MultiOmics Inc.
+      </div>
     </div>
 
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
     © <script>document.write(new Date().getFullYear())</script> MultiOmics Inc. •
-    <a href="privacy.html">Privacy & Compliance</a> •
+    <a href="privacy.html">Privacy &amp; Compliance</a> •
     <a href="contact.html">Order / Kits</a>
   </div>
 </footer>

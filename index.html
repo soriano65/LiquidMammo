@@ -4,52 +4,67 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>LiquidMammo™ | Breast cancer screening, reimagined</title>
+  <title>LiquidMammo™ | Breast cancer screening reimagined</title>
 
   <!-- SEO -->
-  <meta name="description" content="LiquidMammo is a microRNA-based blood test designed to complement imaging for earlier breast cancer detection—non-invasive, clinician-ordered, and density-aware.">
-  <meta name="keywords" content="breast cancer screening, microRNA test, liquid biopsy, early detection, dense breasts, molecular diagnostics">
+  <meta name="description" content="LiquidMammo is a microRNA-based blood test that complements breast cancer screening, helping improve detection performance, especially in dense breasts.">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
+  assets/css/styles.css
+
+  <!-- Favicon -->
+  favicon.png
 </head>
 
 <body>
 
 <!-- ======================================
-     HEADER — BIG LOGO ONLY
+     HEADER — MEDIUM-LARGE LOGO + WORDMARK
 ======================================= -->
-<header style="background:white; border-bottom:4px solid #E91E63; padding:32px 0;">
-  <div class="container" style="text-align:center;">
-    <img 
-      src="assets/logos/liquidmammo-logo.png" 
-      alt="LiquidMammo Logo"
-      style="max-width:420px; width:100%; height:auto; display:block; margin:auto;"
-    >
+<header style="background:white; border-bottom:4px solid #E91E63; padding:18px 0;">
+  <div class="container">
+    <nav style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:22px;">
+
+      <div class="brand" style="display:flex; align-items:center; gap:18px;">
+        <img src="assets/logos/liquidmammo-logo.png" alt="LiquidMammo logo"
+             style="height:160px; width:auto;">
+        <strong style="font-size:2.35rem; font-weight:900; letter-spacing:-0.8px; color:#E91E63;">
+          LiquidMammo™
+        </strong>
+      </div>
+
+      <div class="nav-links" style="display:flex; flex-wrap:wrap; gap:22px; font-weight:500;">
+        <a href="how-it-works.html">How It Works</a>
+        <a href="science.html">Science</a>
+        <a href="evidence.html">Evidence</a>
+        <a href="patients.html">Patients</a>
+        <a href="clinicians.html">Clinicians</a>
+        <a href="biobank.html">Biobank</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="about.html">About</a>
+      </div>
+
+    </nav>
   </div>
 </header>
 
 
 <!-- ======================================
-     HERO
+     HERO — NO DUPLICATION OF TAGLINE
 ======================================= -->
-<section class="hero">
-  <div class="container" style="text-align:center;">
+<section class="hero" style="padding:40px 0; text-align:center;">
+  <div class="container">
 
-    <h1 style="font-size:2.4rem; margin-bottom:10px;">
-      Breast cancer screening, reimagined.
+    <!-- Updated hero headline with correct branding -->
+    <h1 style="font-size:2.4rem; margin-bottom:12px; font-weight:800;">
+      Breast cancer screening reimagined
     </h1>
 
-    <p class="kicker" style="font-size:1rem; margin-bottom:20px;">
-      A microRNA blood test designed to complement imaging.
-    </p>
-
-    <p class="small" style="max-width:650px; margin:0 auto 24px auto;">
-      Early molecular changes often precede structural findings on mammography.
-      LiquidMammo provides a non‑invasive signal that strengthens clinical
-      decision‑making—especially where breast density limits traditional
-      imaging performance.
+    <p class="small" style="max-width:650px; margin:0 auto 28px auto;">
+      A supplemental microRNA-based blood test designed to complement breast imaging by providing
+      biologically-driven insight—especially where breast density limits mammographic performance.
     </p>
 
     <div class="cta-row" style="justify-content:center;">
@@ -57,12 +72,10 @@
       <a class="btn secondary" href="clinicians.html#enroll">Clinician Enrollment</a>
     </div>
 
-    <p class="notice" style="max-width:600px; margin:24px auto 0 auto;">
-      Regulatory: LiquidMammo is being developed as a
-      <strong>CLIA Laboratory Developed Test (LDT)</strong>;
-      not yet FDA‑cleared or FDA‑approved.
+    <p class="notice" style="max-width:600px; margin:26px auto 0 auto;">
+      LiquidMammo is being developed as a
+      <strong>CLIA Laboratory Developed Test (LDT)</strong>; not yet FDA‑cleared or FDA‑approved.
     </p>
-
   </div>
 </section>
 
@@ -76,21 +89,21 @@
     <div class="card-mini">
       <h4>Dense breasts challenge mammography</h4>
       <p class="small">
-        Sensitivity drops to ~61% in extremely dense tissue. A molecular complement may reduce misses.
+        Sensitivity can fall to ~61% in extremely dense tissue. A molecular complement reduces misses.
       </p>
     </div>
 
     <div class="card-mini">
       <h4>Earlier biological signal</h4>
       <p class="small">
-        microRNA shifts can occur before imaging-visible lesions, strengthening screening performance.
+        microRNA dysregulation can appear before imaging-visible changes.
       </p>
     </div>
 
     <div class="card-mini">
-      <h4>Addresses real‑world variability</h4>
+      <h4>Addresses real-world variability</h4>
       <p class="small">
-        Mammographic detection varies by density, age, and equipment. A molecular layer improves consistency.
+        Imaging performance varies with density, age, equipment, and technologist. A biological layer improves consistency.
       </p>
     </div>
 
@@ -110,9 +123,9 @@
 
       <div class="stats-card">
         <ul class="list-tight">
-          <li><strong>1 in 8</strong> cancers missed by mammography overall</li>
+          <li><strong>1 in 8</strong> cancers missed by mammography</li>
           <li><strong>Higher interval cancer rates</strong> in dense breasts</li>
-          <li><strong>~50–60%</strong> false‑positive probability over 10 years</li>
+          <li><strong>50–60%</strong> cumulative false‑positive rate over 10 years</li>
         </ul>
       </div>
 
@@ -120,13 +133,13 @@
         <ul class="list-tight">
           <li><strong>~61% sensitivity</strong> in extremely dense tissue</li>
           <li><strong>2–3 per 1,000</strong> cancers detected in younger women</li>
-          <li><strong>Lower participation</strong> when imaging alone is used</li>
+          <li><strong>Lower adherence</strong> when relying on imaging alone</li>
         </ul>
       </div>
 
       <div class="card note-card">
         <p class="small">
-          LiquidMammo complements—not replaces—imaging. Combining biology + imaging improves consistency.
+          LiquidMammo complements imaging — it does not replace it. Combining biology + imaging strengthens screening.
         </p>
       </div>
 
@@ -137,7 +150,7 @@
 
 
 <!-- ======================================
-     HOW IT WORKS
+     HOW IT WORKS (PREVIEW)
 ======================================= -->
 <section class="panel-light section">
   <div class="container">
@@ -147,12 +160,12 @@
 
       <div class="card-mini">
         <h4>1 — Ordered by clinician</h4>
-        <p class="small">Blood draw at routine visit; no preparation needed.</p>
+        <p class="small">Blood draw at routine visit; no preparation required.</p>
       </div>
 
       <div class="card-mini">
         <h4>2 — microRNA profiling</h4>
-        <p class="small">A multi‑marker panel quantifies tumor‑associated microRNA dysregulation.</p>
+        <p class="small">A multi‑marker panel quantifies tumor‑associated biological signals.</p>
       </div>
 
       <div class="card-mini">
@@ -175,28 +188,23 @@
       <strong>LiquidMammo™</strong><br/>
       A test developed by MultiOmics Inc.
       <p class="footer-note">
-        MultiOmics Inc. is headquartered in Washington, DC,
-        and operates out of LabCentral, Cambridge, MA.
+        MultiOmics Inc. is headquartered in Washington, DC, and operates out of LabCentral, Cambridge, MA.
       </p>
     </div>
 
     <div class="footer-logo">
-      <img src="assets/logos/multiomics-logo.png" alt="MultiOmics logo" style="height:26px; opacity:.85;">
-      <div class="footer-note" style="line-height:1.2">
-        Developed by<br/>MultiOmics Inc.
-      </div>
+      <img src="assets/logos/multiomics-logo.png" alt="MultiOmics logo" style="height:22px;">
+      <div class="footer-note" style="line-height:1.2">Developed by<br/>MultiOmics Inc.</div>
     </div>
 
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
-    © <script>document.write(new Date().getFullYear())</script> 
-    MultiOmics Inc. • 
-    <a href="privacy.html">Privacy &amp; Compliance</a> • 
+    © <script>document.write(new Date().getFullYear())</script> MultiOmics Inc. •
+    <a href="privacy.html">Privacy & Compliance</a> •
     <a href="contact.html">Order / Kits</a>
   </div>
 </footer>
 
 </body>
 </html>
-

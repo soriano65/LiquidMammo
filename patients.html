@@ -5,16 +5,23 @@
   <title>Patients | LiquidMammo™</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta
-    name="description"
-    content="Information for patients about LiquidMammo™, a microRNA-based supplemental screening test designed to support breast cancer detection, especially in dense breasts."
-  />
+  <meta name="description"
+        content="Information for patients about LiquidMammo™, a microRNA-based supplemental screening test designed to support breast cancer detection, especially in dense breasts.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.liquidmammo.com/patients.html" />
 
   <!-- Stylesheet -->
-  assets/css/styles.css
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <!-- Favicon -->
-  favicon.png
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Open Graph (optional but good for sharing) -->
+  <meta property="og:title" content="Patients | LiquidMammo™">
+  <meta property="og:description" content="Learn how the LiquidMammo™ blood test can complement mammography, especially in dense breasts.">
+  <meta property="og:url" content="https://www.liquidmammo.com/patients.html">
+  <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -22,9 +29,9 @@
 <!-- ======================================
      MINIMAL HEADER (← Home)
 ======================================= -->
-<header class="container">
-  <nav>
-    index.html← Home</a>
+<header class="container" role="banner">
+  <nav aria-label="Main">
+    <a href="/index.html" class="back-link">← Home</a>
   </nav>
 </header>
 
@@ -32,14 +39,15 @@
 <!-- ======================================
      MAIN CONTENT
 ======================================= -->
-<main class="container">
+<main class="container" id="main-content">
 
   <h1>Information for Patients</h1>
 
   <!-- Overview -->
-  <section class="section-tight">
+  <section class="section-tight" aria-labelledby="overview">
+    <h2 id="overview" class="visually-hidden">Overview</h2>
     <p>
-      LiquidMammo™ is a non-invasive blood test designed to complement mammography by analyzing
+      <strong>LiquidMammo™</strong> is a non-invasive blood test designed to complement mammography by analyzing
       <strong>cancer‑associated microRNA patterns</strong>. It is particularly helpful for patients with
       <strong>dense breast tissue</strong>, where standard imaging may be less sensitive.
     </p>
@@ -53,79 +61,75 @@
 
 
   <!-- Why patients may consider it -->
-  <section class="panel-light section-tight">
-    <h2>Why patients consider a supplemental test</h2>
+  <section class="panel-light section-tight" aria-labelledby="why-consider">
+    <h2 id="why-consider">Why patients consider a supplemental test</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Breast density challenges</h4>
         <p class="small">
           Dense tissue can make small cancers harder to see on mammograms.
           Up to 50–74% of women under 50 have dense breasts.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Non‑invasive</h4>
         <p class="small">
           A simple blood draw — no radiation, no compression, no imaging discomfort.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Added confidence</h4>
         <p class="small">
           LiquidMammo provides molecular information that complements imaging and clarifies uncertain results.
         </p>
-      </div>
-
+      </article>
     </div>
   </section>
 
 
   <!-- How it works -->
-  <section class="section-tight">
-    <h2>How the test works</h2>
+  <section class="section-tight" aria-labelledby="how-it-works">
+    <h2 id="how-it-works">How the test works</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>1 — Clinician orders the test</h4>
         <p class="small">
           LiquidMammo is ordered through your healthcare provider—just like a routine blood test.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>2 — Blood sample collected</h4>
         <p class="small">
           A standard blood draw is performed in the clinic or at a partner laboratory.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>3 — microRNA signature analyzed</h4>
         <p class="small">
           The laboratory analyzes a multi‑marker <span class="scientific-term">microRNA</span> panel known to show
           early changes associated with cancer biology.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>4 — Results sent to clinician</h4>
         <p class="small">
           Your provider receives a structured report with result classification and screening recommendations.
         </p>
-      </div>
-
+      </article>
     </div>
   </section>
 
 
   <!-- Ideal patient groups -->
-  <section class="panel-light section-tight">
-    <h2>Who may benefit</h2>
+  <section class="panel-light section-tight" aria-labelledby="who-benefits">
+    <h2 id="who-benefits">Who may benefit</h2>
 
     <ul class="list-tight">
       <li>Women with <strong>dense breasts</strong> (BI‑RADS C or D).</li>
@@ -138,39 +142,33 @@
 
 
   <!-- FAQ -->
-  <section class="section-tight">
-    <h2>Frequently asked</h2>
+  <section class="section-tight" aria-labelledby="faq">
+    <h2 id="faq">Frequently asked</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px;">
-
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Is this a replacement for mammography?</h4>
-        <p class="small">
-          No. LiquidMammo supplements imaging — it does not replace it.
-        </p>
-      </div>
+        <p class="small">No. LiquidMammo supplements imaging — it does not replace it.</p>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Will insurance cover it?</h4>
         <p class="small">
           Insurance coverage for LDTs varies. Your clinician can advise as validation progresses.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>How soon will results be available?</h4>
-        <p class="small">
-          Timing depends on the clinic's workflow. Your provider will advise.
-        </p>
-      </div>
-
+        <p class="small">Timing depends on the clinic's workflow. Your provider will advise.</p>
+      </article>
     </div>
   </section>
 
 
   <!-- Enrollment section -->
-  <section id="patients" class="section">
-    <h2>Patient early‑access</h2>
+  <section id="patients" class="section" aria-labelledby="early-access">
+    <h2 id="early-access">Patient early‑access</h2>
 
     <p>
       LiquidMammo works with select clinics during the validation phase.
@@ -178,8 +176,8 @@
     </p>
 
     <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
-      contact.html#patientsRequest Information</a>
-      clinicians.html#enrollClinician Enrollment</a>
+      <a class="button" href="/contact.html#patients">Request Information</a>
+      <a class="button button-secondary" href="/clinicians.html#enroll">Clinician Enrollment</a>
     </div>
   </section>
 
@@ -189,7 +187,7 @@
 <!-- ======================================
      FOOTER
 ======================================= -->
-<footer>
+<footer role="contentinfo">
   <div class="container footer-grid">
 
     <div>
@@ -202,7 +200,9 @@
     </div>
 
     <div class="footer-logo" style="justify-content:flex-end; text-align:right;">
-      assets/logos/multiomics-logo.png
+      <img src="/assets/logos/multiomics-logo.png"
+           alt="MultiOmics Inc. logo"
+           width="160" height="auto" />
       <div class="footer-note" style="line-height:1.2">
         Developed by<br/>MultiOmics Inc.
       </div>
@@ -211,12 +211,16 @@
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
-    © <script>document.write(new Date().getFullYear())</script>
-    MultiOmics Inc. •
-    privacy.htmlPrivacy & Compliance</a> •
-    contact.htmlContact</a>
+    © <span id="year"></span> MultiOmics Inc. •
+    <a href="/privacy.html">Privacy &amp; Compliance</a> •
+    <a href="/contact.html">Contact</a>
   </div>
 </footer>
+
+<script>
+  // Year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

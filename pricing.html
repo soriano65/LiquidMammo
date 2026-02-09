@@ -10,11 +10,20 @@
     content="Pricing information for LiquidMammo™, a microRNA-based supplemental screening test under CLIA LDT development."
   />
 
+  <!-- Canonical (optional but recommended when live) -->
+  <link rel="canonical" href="https://www.liquidmammo.com/pricing.html" />
+
   <!-- Stylesheet -->
-  assets/css/styles.css
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 
   <!-- Favicon -->
-  favicon.png
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Open Graph (helpful for sharing) -->
+  <meta property="og:title" content="Pricing | LiquidMammo™" />
+  <meta property="og:description" content="Self-pay, clinic, and partner pricing for the LiquidMammo™ microRNA-based supplemental screening test." />
+  <meta property="og:url" content="https://www.liquidmammo.com/pricing.html" />
+  <meta property="og:type" content="website" />
 </head>
 
 <body>
@@ -22,9 +31,9 @@
 <!-- ======================================
      MINIMAL HEADER (← Home)
 ======================================= -->
-<header class="container">
-  <nav>
-    index.html← Home</a>
+<header class="container" role="banner">
+  <nav aria-label="Main">
+    <a href="/index.html" aria-label="Go to home">← Home</a>
   </nav>
 </header>
 
@@ -32,14 +41,15 @@
 <!-- ======================================
      MAIN CONTENT
 ======================================= -->
-<main class="container">
+<main class="container" id="main-content">
 
   <h1>Pricing</h1>
 
   <!-- Overview -->
-  <section class="section-tight">
+  <section class="section-tight" aria-labelledby="overview">
+    <h2 id="overview" class="visually-hidden">Overview</h2>
     <p>
-      LiquidMammo™ is currently under validation as a
+      <strong>LiquidMammo™</strong> is currently under validation as a
       <strong>CLIA Laboratory Developed Test (LDT)</strong>. Pricing reflects early‑access development phases
       and may be adjusted as performance data and payer coverage evolve.
     </p>
@@ -52,8 +62,8 @@
 
 
   <!-- Self-pay -->
-  <section class="panel-light section-tight">
-    <h2>Self‑pay pricing</h2>
+  <section class="panel-light section-tight" aria-labelledby="self-pay">
+    <h2 id="self-pay">Self‑pay pricing</h2>
 
     <div class="card" style="max-width:480px;">
       <p class="price" style="margin:0;">$395</p>
@@ -64,15 +74,15 @@
     </div>
 
     <p class="small" style="margin-top:14px;">
-      Payment is typically processed through participating clinics.  
+      Payment is typically processed through participating clinics.
       Some providers may offer installment or financing options.
     </p>
   </section>
 
 
   <!-- Insurance -->
-  <section class="section-tight">
-    <h2>Insurance & coverage</h2>
+  <section class="section-tight" aria-labelledby="insurance">
+    <h2 id="insurance">Insurance &amp; coverage</h2>
 
     <p class="small">
       Coverage for Laboratory Developed Tests (LDTs) may vary by payer. As validation progresses,
@@ -88,8 +98,8 @@
 
 
   <!-- Clinic pricing -->
-  <section class="panel-light section-tight">
-    <h2>Clinic & partner pricing</h2>
+  <section class="panel-light section-tight" aria-labelledby="clinic-pricing">
+    <h2 id="clinic-pricing">Clinic &amp; partner pricing</h2>
 
     <p class="small">
       Volume pricing and partnership rates are available for multi‑clinic groups, health systems,
@@ -103,37 +113,37 @@
     </ul>
 
     <div style="margin-top:14px;">
-      contact.html#partnersRequest partnership information</a>
+      <a href="/contact.html#partners">Request partnership information</a>
     </div>
   </section>
 
 
   <!-- FAQ -->
-  <section class="section-tight">
-    <h2>Frequently asked</h2>
+  <section class="section-tight" aria-labelledby="faq">
+    <h2 id="faq">Frequently asked</h2>
 
     <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:16px;">
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Are there additional fees?</h4>
         <p class="small">
           No — the price includes analysis, interpretation, and reporting.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Do clinics bill patients?</h4>
         <p class="small">
           Typically yes. Clinics handle billing directly during early‑access.
         </p>
-      </div>
+      </article>
 
-      <div class="card-mini">
+      <article class="card-mini">
         <h4>Are refunds available?</h4>
         <p class="small">
           Refunds follow the policies of the clinic performing the blood draw.
         </p>
-      </div>
+      </article>
 
     </div>
   </section>
@@ -144,7 +154,7 @@
 <!-- ======================================
      FOOTER
 ======================================= -->
-<footer>
+<footer role="contentinfo">
   <div class="container footer-grid">
 
     <div>
@@ -157,18 +167,25 @@
     </div>
 
     <div class="footer-logo" style="justify-content:flex-end; text-align:right;">
-      assets/logos/multiomics-logo.png
-      <div class="footer-note" style="line-height:1.2">Developed by<br/>MultiOmics Inc.</div>
+      <img src="/assets/logos/multiomics-logo.png" alt="MultiOmics Inc. logo" loading="lazy" style="max-height:42px;" />
+      <div class="footer-note" style="line-height:1.2">
+        Developed by<br/>MultiOmics Inc.
+      </div>
     </div>
 
   </div>
 
   <div class="container footer-note" style="margin-top:20px;">
-    © <script>document.write(new Date().getFullYear())</script> MultiOmics Inc. •
-    privacy.htmlPrivacy & Compliance</a> •
-    contact.htmlContact</a>
+    © <span id="year"></span> MultiOmics Inc. •
+    <a href="/privacy.html">Privacy &amp; Compliance</a> •
+    <a href="/contact.html">Contact</a>
   </div>
 </footer>
+
+<script>
+  // Year in footer (avoid document.write)
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>

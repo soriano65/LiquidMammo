@@ -12,47 +12,27 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <!-- Favicon -->
   <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 
 <body>
 
 <!-- ======================================
-     HEADER
+     HEADER — BIG LOGO ONLY
 ======================================= -->
-<header>
-  <div class="container">
-    <nav>
-
-      <!-- Brand -->
-      <div class="brand">
-        <img src="assets/logos/liquidmammo-logo.png" alt="LiquidMammo logo" />
-        <strong>LiquidMammo™</strong>
-      </div>
-
-      <!-- Navigation -->
-      <div class="nav-links">
-        <a href="how-it-works.html">How It Works</a>
-        <a href="science.html">Science</a>
-        <a href="evidence.html">Evidence</a>
-        <a href="patients.html">Patients</a>
-        <a href="clinicians.html">Clinicians</a>
-        <a href="biobank.html">Biobank</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="about.html">About</a>
-      </div>
-
-    </nav>
+<header style="background:white; border-bottom:4px solid #E91E63; padding:32px 0;">
+  <div class="container" style="text-align:center;">
+    <img 
+      src="assets/logos/liquidmammo-logo.png" 
+      alt="LiquidMammo Logo"
+      style="max-width:420px; width:100%; height:auto; display:block; margin:auto;"
+    >
   </div>
 </header>
 
 
 <!-- ======================================
-     HERO (TEXT-ONLY — logo is only in header)
+     HERO
 ======================================= -->
 <section class="hero">
   <div class="container" style="text-align:center;">
@@ -73,7 +53,7 @@
     </p>
 
     <div class="cta-row" style="justify-content:center;">
-      <a class="btn" href="patients.html#patients">Join Early Access</a>
+      <a class="btn" href="patients.html#join">Join Early Access</a>
       <a class="btn secondary" href="clinicians.html#enroll">Clinician Enrollment</a>
     </div>
 
@@ -146,7 +126,7 @@
 
       <div class="card note-card">
         <p class="small">
-          LiquidMammo complements—rather than replaces—imaging. Combining biology + imaging improves consistency.
+          LiquidMammo complements—not replaces—imaging. Combining biology + imaging improves consistency.
         </p>
       </div>
 
@@ -201,7 +181,7 @@
     </div>
 
     <div class="footer-logo">
-      <img src="assets/logos/multiomics-logo.png" alt="MultiOmics logo" />
+      <img src="assets/logos/multiomics-logo.png" alt="MultiOmics logo" style="height:26px; opacity:.85;">
       <div class="footer-note" style="line-height:1.2">
         Developed by<br/>MultiOmics Inc.
       </div>
@@ -209,4 +189,14 @@
 
   </div>
 
-  <div class="container footer-note
+  <div class="container footer-note" style="margin-top:20px;">
+    © <script>document.write(new Date().getFullYear())</script> 
+    MultiOmics Inc. • 
+    <a href="privacy.html">Privacy &amp; Compliance</a> • 
+    <a href="contact.html">Order / Kits</a>
+  </div>
+</footer>
+
+</body>
+</html>
+
